@@ -4,11 +4,11 @@ describe('PortalHelper', () => {
   describe('buildPortalURL', () => {
     it('returns the correct url', () => {
       window.chatwootConfig = {
-        hostURL: 'https://app.chatwoot.com',
-        helpCenterURL: 'https://help.chatwoot.com',
+        hostURL: 'https://app.ahmedkhaled4d.com',
+        helpCenterURL: 'https://help.ahmedkhaled4d.com',
       };
       expect(buildPortalURL('handbook')).toEqual(
-        'https://help.chatwoot.com/hc/handbook'
+        'https://help.ahmedkhaled4d.com/hc/handbook'
       );
       window.chatwootConfig = {};
     });
@@ -17,12 +17,12 @@ describe('PortalHelper', () => {
   describe('buildPortalArticleURL', () => {
     it('returns the correct url', () => {
       window.chatwootConfig = {
-        hostURL: 'https://app.chatwoot.com',
-        helpCenterURL: 'https://help.chatwoot.com',
+        hostURL: 'https://app.ahmedkhaled4d.com',
+        helpCenterURL: 'https://help.ahmedkhaled4d.com',
       };
       expect(
         buildPortalArticleURL('handbook', 'culture', 'fr', 'article-slug')
-      ).toEqual('https://help.chatwoot.com/hc/handbook/articles/article-slug');
+      ).toEqual('https://help.ahmedkhaled4d.com/hc/handbook/articles/article-slug');
       window.chatwootConfig = {};
     });
   });

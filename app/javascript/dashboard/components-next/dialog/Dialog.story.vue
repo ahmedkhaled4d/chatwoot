@@ -58,7 +58,7 @@ const onConfirm = dialog => {};
               type="text"
               placeholder="user-guide"
               label="Slug"
-              message="app.chatwoot.com/hc/my-portal/en-US/categories/my-slug"
+              message="app.ahmedkhaled4d.com/hc/my-portal/en-US/categories/my-slug"
             />
           </div>
         </template>
