@@ -335,7 +335,7 @@ RSpec.describe ConversationReplyMailer do
     end
 
     context 'when inbox email address is available' do
-      let(:inbox) { create(:inbox, account: account, email_address: 'noreply@chatwoot.com') }
+      let(:inbox) { create(:inbox, account: account, email_address: 'noreply@ahmedkhaled4d.com') }
       let(:conversation) { create(:conversation, assignee: agent, inbox: inbox, account: account) }
       let!(:message) { create(:message, conversation: conversation, account: account) }
       let(:mail) { described_class.reply_with_summary(message.conversation, message.id).deliver_now }

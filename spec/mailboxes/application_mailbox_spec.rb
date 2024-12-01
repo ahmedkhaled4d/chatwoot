@@ -73,14 +73,14 @@ RSpec.describe ApplicationMailbox do
         expect do
           described_class.route mail_with_invalid_to_address
         end.to raise_error(StandardError,
-                           'Invalid email to address header <vishnu@chatwoot.com>vishnu@chatwoot.com')
+                           'Invalid email to address header <vishnu@ahmedkhaled4d.com>vishnu@ahmedkhaled4d.com')
       end
 
       it 'raises another error when mail.to header is malformed' do
         expect do
           described_class.route mail_with_invalid_to_address_2
         end.to raise_error(StandardError,
-                           'Invalid email to address header vishnu@chatwoot.com www.chatwoot.com')
+                           'Invalid email to address header vishnu@ahmedkhaled4d.com www.ahmedkhaled4d.com')
       end
     end
   end

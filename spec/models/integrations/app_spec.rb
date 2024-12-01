@@ -83,7 +83,7 @@ RSpec.describe Integrations::App do
       it 'returns true if the captain feature is enabled and the captain app url is present' do
         account.enable_features('captain_integration')
         account.save!
-        InstallationConfig.where(name: 'CAPTAIN_APP_URL').first_or_create(value: 'https://app.chatwoot.com')
+        InstallationConfig.where(name: 'CAPTAIN_APP_URL').first_or_create(value: 'https://app.ahmedkhaled4d.com')
         expect(app.active?(account)).to be true
       end
     end
